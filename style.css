@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #fff;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-top: 20px; */
+    margin-right: 20px;
+    height: 100px;
+    align-items: center;
+    /* background: black; */
+}
+
+header .logo{
+    width: 100px;
+    height: 50%;
+}
+
+header .logo img{
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .menu ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+header .menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+
+header .menu ul li a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+
+
+
+/* la section home */
+
+.home{
+    position: relative;
+    top: 7rem;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    margin-bottom: 30%;
+}
+
+.home h2{
+    font-size: 70px;
+    text-align: center;
+    /* color: red; */
+    text-transform: uppercase;
+}
+
+.home .corps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+.home .corps .left{
+    width: 40%;
+    padding: 30px;
+}
+
+.home .corps .left h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 40px;
+}
+
+.home .corps .left h3 span{
+    color: crimson;
+    text-transform: lowercase;
+}
+
+.home .corps .rigth{
+    width: 50%;
+    height: 100%;
+}
+
+
+.home .corps .rigth img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+}
+
+
+/* la section about */
+
+.about{
+    height: 100vh;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.about h2{
+    margin-bottom: 4rem;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .contenu .text{
+    margin-top: 30px;
+    width: 40%;
+    height: 50%;
+    padding: 40px;
+}
+
+
+.about .contenu .text .supplement{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.about .contenu .text .supplement .info p{
+    color: #bc0e1b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about .contenu .text .supplement .info p span{
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+.about .contenu .text .supplement .public p{
+    color: #bc0e1b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about .contenu .text .supplement .public p span{
+    color: #000;
+    text-transform: uppercase;
+}
+.about .contenu .photo{
+    width: 50%;
+    height: 70%;
+    
+}
+
+.about .contenu .photo img{
+    width: 90%;
+    height: 500px;
+    object-position: top;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* la section parcours */
+
+.parcours{
+    height: 50vh;
+    width: 100%;
+}
+
+.parcours h2{
+    margin-bottom: 4rem;
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parcours .tableau{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parcours .tableau table{
+    border-collapse: collapse;
+    width: 80%;
+    /* height: 100%; */
+}
+
+.parcours .tableau table tr{
+    height: 30px;
+}
+
+.parcours .tableau table tr td, th
+{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.parcours .tableau table tr td span, th span{
+    color: #bc0e1b;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* le footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 400px;
+    background: black;
+    width: 100%;
+    margin: 5px;
+}
+
+footer .footer .liens{
+    margin-top: 30px;
+}
+
+footer .footer .liens h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .footer .liens ul li{
+    list-style: none;
+}
+
+footer .footer .liens ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1f1;
+}
+
+footer .footer .liens ul li a:hover{
+    color: #fff;
+}
+
+/* burger boutton */
+
+.burger{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.burger div{
+    /* display: none; */
+    height: 100%;
+    /* transform: rotate(90deg); */
+    border: 1px solid black;
+}
+
+.burger div:nth-child(1){
+    transform: rotate(25deg);
+}
+
+.burger div:nth-child(2){
+    transform: rotate(-25deg);
+}
+
+@media screen and (max-width: 750px){
+    header{
+        width: 100%;
+    }
+
+    .home{
+        height: 100vh;
+        margin-bottom: 600px;
+    }
+    .home .corps{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .home .corps .left{
+        width: 100%;
+    }
+
+    .home .corps .rigth{
+        width: 100%;
+    }
+}
