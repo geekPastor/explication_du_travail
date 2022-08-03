@@ -106,9 +106,8 @@ header .menu ul li a{
 
 .home .corps .rigth img{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
-    object-position: top;
     border-radius: 50px;
 }
 
@@ -131,12 +130,12 @@ header .menu ul li a{
 .about .contenu{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .about .contenu .text{
     margin-top: 30px;
-    width: 40%;
+    width: 90%;
     height: 50%;
     padding: 40px;
 }
@@ -170,19 +169,7 @@ header .menu ul li a{
     color: #000;
     text-transform: uppercase;
 }
-.about .contenu .photo{
-    width: 50%;
-    height: 70%;
-    
-}
 
-.about .contenu .photo img{
-    width: 90%;
-    height: 500px;
-    object-position: top;
-    border-radius: 20px;
-    object-fit: cover;
-}
 
 /* la section parcours */
 
@@ -267,31 +254,7 @@ footer .footer .liens ul li a:hover{
     color: #fff;
 }
 
-/* burger boutton */
 
-.burger{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    justify-content: center;
-    border: 1px solid black;
-}
-
-.burger div{
-    /* display: none; */
-    height: 100%;
-    /* transform: rotate(90deg); */
-    border: 1px solid black;
-}
-
-.burger div:nth-child(1){
-    transform: rotate(25deg);
-}
-
-.burger div:nth-child(2){
-    transform: rotate(-25deg);
-}
 
 @media screen and (max-width: 750px){
     header{
